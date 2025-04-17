@@ -1,1 +1,200 @@
-const a0_0x264d4d=a0_0x50ea;(function(_0x4526a3,_0x3b9015){const _0x9b5563=a0_0x50ea,_0xe172d9=_0x4526a3();while(!![]){try{const _0x2d3594=-parseInt(_0x9b5563(0x10c))/0x1+parseInt(_0x9b5563(0xe0))/0x2+-parseInt(_0x9b5563(0xe4))/0x3*(parseInt(_0x9b5563(0xf9))/0x4)+-parseInt(_0x9b5563(0x106))/0x5*(parseInt(_0x9b5563(0x120))/0x6)+-parseInt(_0x9b5563(0xec))/0x7+-parseInt(_0x9b5563(0xe5))/0x8+parseInt(_0x9b5563(0xf3))/0x9*(parseInt(_0x9b5563(0xd4))/0xa);if(_0x2d3594===_0x3b9015)break;else _0xe172d9['push'](_0xe172d9['shift']());}catch(_0x2fe29b){_0xe172d9['push'](_0xe172d9['shift']());}}}(a0_0x308f,0xbb650));const regex=/https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/resultado\/tarefa\/\d+\/resposta\/\d+/;function a0_0x308f(){const _0xb2b626=['answers','style','clone','sessionStorage','task','replace','center','18218020frJOax','innerText','type','value','comment','rel','observe','fromEntries','questions','showToast','stylesheet','application/json','897536NtlvwP','href','innerHTML','name','2643519xoHpVK','10811904Jinili','div','PUT','parse','executed_on','https://cdn.jsdelivr.net/npm/toastify-js','stringify','4795532gecvmq','10px\x2020px','filter','width','fill-words','5px','text/javascript','18bVHyQA','test','img','answer','onerror','createElement','4tvpjrh','then','link','Injetado\x20com\x20Sucesso!','sentences','prepend','appendChild','url','#000000','edusp','question_id','https://edusp-api.ip.tv/tms/task/','find','1375EWORhw','?with_task=true&with_genre=true&with_questions=true&with_assessed_skills=true','Arial,\x20sans-serif','text_ai','body','toastElement','263242dNodSq','getItem','src','20px','marginRight','Tarefa\x20feita\x20com\x20sucesso!','height','keys','order-sentences','title','16px','json','map','accessed_on','flex','location','fetch','ids','string','head','3138jULMmH','/answer/','bottom','webclient','options','sdf_web:state','https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css','script'];a0_0x308f=function(){return _0xb2b626;};return a0_0x308f();}let oldHref=document[a0_0x264d4d(0x11b)][a0_0x264d4d(0xe1)];const STATE=JSON[a0_0x264d4d(0xe8)](window[a0_0x264d4d(0xd0)][a0_0x264d4d(0x10d)](a0_0x264d4d(0xca))),headers_template={'x-api-realm':a0_0x264d4d(0x102),'x-api-platform':a0_0x264d4d(0x123),'x-api-key':STATE['autenticacao']['tokenSessao'],'content-type':a0_0x264d4d(0xdf)};var room_name=STATE['turma']['turmas'][0x0][a0_0x264d4d(0xe3)],nick_name=STATE['autenticacao']['apelido'];function removeHtmlTags(_0x287f8f){const _0x14c256=a0_0x264d4d,_0x5a6972=document[_0x14c256(0xf8)](_0x14c256(0xe6));return _0x5a6972['innerHTML']=_0x287f8f,_0x5a6972['textContent']||_0x5a6972[_0x14c256(0xd5)]||'';}function transformJson(_0x17587f){const _0x209a55=a0_0x264d4d;let _0xe79da6={'accessed_on':_0x17587f[_0x209a55(0x119)],'executed_on':_0x17587f[_0x209a55(0xe9)],'duration':0x320,'answers':{}};for(let _0x36e24c in _0x17587f[_0x209a55(0xcd)]){let _0x480ad1=_0x17587f[_0x209a55(0xcd)][_0x36e24c],_0x4c1ad4=_0x17587f[_0x209a55(0xd1)][_0x209a55(0xdc)][_0x209a55(0x105)](_0x285a14=>_0x285a14['id']===parseInt(_0x36e24c));if(_0x4c1ad4[_0x209a55(0xd6)]===_0x209a55(0x114)){let _0x239392=_0x4c1ad4[_0x209a55(0xc9)][_0x209a55(0xfd)][_0x209a55(0x118)](_0x5ba8be=>_0x5ba8be['value']);_0xe79da6[_0x209a55(0xcd)][_0x36e24c]={'question_id':_0x480ad1[_0x209a55(0x103)],'question_type':_0x4c1ad4[_0x209a55(0xd6)],'answer':_0x239392};}else{if(_0x4c1ad4[_0x209a55(0xd6)]===_0x209a55(0xf0)){let _0x3beda9=_0x4c1ad4[_0x209a55(0xc9)],_0x442101=_0x3beda9['phrase'][_0x209a55(0x118)](_0x1498d0=>_0x1498d0[_0x209a55(0xd7)])[_0x209a55(0xee)]((_0x1b5c31,_0x380a98)=>_0x380a98%0x2!==0x0);_0xe79da6[_0x209a55(0xcd)][_0x36e24c]={'question_id':_0x480ad1[_0x209a55(0x103)],'question_type':_0x4c1ad4['type'],'answer':_0x442101};}else{if(_0x4c1ad4[_0x209a55(0xd6)]===_0x209a55(0x109)){let _0xb192a9=_0x4c1ad4[_0x209a55(0xd8)][_0x209a55(0xd2)](/<\/?p>/g,'');_0xb192a9=removeHtmlTags(_0xb192a9),_0xe79da6[_0x209a55(0xcd)][_0x36e24c]={'question_id':_0x480ad1[_0x209a55(0x103)],'question_type':_0x4c1ad4[_0x209a55(0xd6)],'answer':{'0':_0xb192a9}};}else{if(_0x4c1ad4[_0x209a55(0xd6)]==='fill-letters'){let _0x328729=_0x4c1ad4[_0x209a55(0xc9)][_0x209a55(0xf6)];_0xe79da6['answers'][_0x36e24c]={'question_id':_0x480ad1['question_id'],'question_type':_0x4c1ad4[_0x209a55(0xd6)],'answer':_0x328729};}else{if(_0x4c1ad4[_0x209a55(0xd6)]==='cloud'){let _0x3d8c72=_0x4c1ad4[_0x209a55(0xc9)][_0x209a55(0x11d)];_0xe79da6[_0x209a55(0xcd)][_0x36e24c]={'question_id':_0x480ad1[_0x209a55(0x103)],'question_type':_0x4c1ad4['type'],'answer':_0x3d8c72};}else{let _0xa1f943=Object[_0x209a55(0xdb)](Object[_0x209a55(0x113)](_0x4c1ad4[_0x209a55(0xc9)])[_0x209a55(0x118)](_0x2458fc=>[_0x2458fc,_0x4c1ad4[_0x209a55(0xc9)][_0x2458fc]['answer']]));_0xe79da6[_0x209a55(0xcd)][_0x36e24c]={'question_id':_0x480ad1[_0x209a55(0x103)],'question_type':_0x4c1ad4['type'],'answer':_0xa1f943};}}}}}}return _0xe79da6;}function sendToast(_0x31dc5d,_0x31c26b=0x1388,_0xc3e0dd='bottom',_0x4c2a65=null,_0x3784ee=a0_0x264d4d(0x116),_0x515bec=a0_0x264d4d(0x108),_0x3abf09='#ffffff'){const _0x520e27=a0_0x264d4d,_0xdf0526=Toastify({'text':_0x31dc5d,'duration':_0x31c26b,'gravity':_0xc3e0dd,'position':_0x520e27(0xd3),'stopOnFocus':!![],'style':{'background':_0x520e27(0x101),'fontSize':_0x3784ee,'fontFamily':_0x515bec,'color':_0x3abf09,'padding':_0x520e27(0xed),'borderRadius':_0x520e27(0xf1),'display':_0x520e27(0x11a),'alignItems':_0x520e27(0xd3)}});if(_0x4c2a65){const _0x2ad6e1=document[_0x520e27(0xf8)](_0x520e27(0xf5));_0x2ad6e1[_0x520e27(0x10e)]=_0x4c2a65,_0x2ad6e1[_0x520e27(0xce)][_0x520e27(0xef)]=_0x520e27(0x10f),_0x2ad6e1[_0x520e27(0xce)][_0x520e27(0x112)]=_0x520e27(0x10f),_0x2ad6e1['style'][_0x520e27(0x110)]='10px',_0xdf0526[_0x520e27(0x10b)][_0x520e27(0xfe)](_0x2ad6e1);}_0xdf0526[_0x520e27(0xdd)]();}function a0_0x50ea(_0x51f506,_0x455b95){const _0x308f3d=a0_0x308f();return a0_0x50ea=function(_0x50eab0,_0x2f4a81){_0x50eab0=_0x50eab0-0xc9;let _0x229f04=_0x308f3d[_0x50eab0];return _0x229f04;},a0_0x50ea(_0x51f506,_0x455b95);}function loadScript(_0x4baa45){return new Promise((_0x2a419f,_0x352d3c)=>{const _0x1b1fbe=a0_0x50ea,_0x1e4c29=document[_0x1b1fbe(0xf8)](_0x1b1fbe(0xcc));_0x1e4c29['src']=_0x4baa45,_0x1e4c29['type']=_0x1b1fbe(0xf2),_0x1e4c29['onload']=_0x2a419f,_0x1e4c29[_0x1b1fbe(0xf7)]=_0x352d3c,document['head']['appendChild'](_0x1e4c29);});}async function loadCss(_0x1e0eb1){return new Promise(_0x3e16d9=>{const _0x1561ac=a0_0x50ea,_0x23a8fb=document[_0x1561ac(0xf8)](_0x1561ac(0xfb));_0x23a8fb[_0x1561ac(0xd9)]=_0x1561ac(0xde),_0x23a8fb[_0x1561ac(0xd6)]='text/css',_0x23a8fb[_0x1561ac(0xe1)]=_0x1e0eb1,_0x23a8fb['onload']=()=>_0x3e16d9(),document[_0x1561ac(0x11f)][_0x1561ac(0xff)](_0x23a8fb);});}async function pegarRespostas(_0xe1fce7,_0x4b1fc5){const _0x1cb7de=a0_0x264d4d,_0x1f1675=_0x1cb7de(0x104)+_0x4b1fc5+_0x1cb7de(0x121)+_0xe1fce7+_0x1cb7de(0x107),_0x221f36=await fetch(_0x1f1675,{'method':'GET','headers':headers_template})[_0x1cb7de(0xfa)](_0x510009=>_0x510009[_0x1cb7de(0x117)]());return _0x221f36;}async function responderCorretamente(_0x497b48,_0x1e7eb6,_0x24f64c){const _0x235a0b=a0_0x264d4d,_0x19cc60='https://edusp-api.ip.tv/tms/task/'+_0x24f64c+_0x235a0b(0x121)+_0x1e7eb6,_0x17c66f=transformJson(_0x497b48);await fetch(_0x19cc60,{'method':_0x235a0b(0xe7),'headers':headers_template,'body':JSON[_0x235a0b(0xeb)](_0x17c66f)});}loadCss(a0_0x264d4d(0xcb)),loadScript(a0_0x264d4d(0xea))[a0_0x264d4d(0xfa)](async()=>{const _0x2d45f7=a0_0x264d4d;sendToast(_0x2d45f7(0xfc),0x1388,_0x2d45f7(0x122));const _0x385928=window[_0x2d45f7(0x11c)],_0x21dd40=/^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;window[_0x2d45f7(0x11c)]=async function(_0x178883,_0x2ea2fc){const _0x4a7ba0=_0x2d45f7;let _0x44f280=typeof _0x178883===_0x4a7ba0(0x11e)?_0x178883:_0x178883[_0x4a7ba0(0x100)];const _0x356ff9=await _0x385928['apply'](this,arguments);if(_0x21dd40[_0x4a7ba0(0xf4)](_0x44f280))try{const _0x41fbb9=_0x356ff9[_0x4a7ba0(0xcf)](),_0x553a19=await _0x41fbb9['json']();_0x3f995f(_0x44f280,_0x553a19);}catch(_0x17061e){console['error']('Erro\x20ao\x20processar\x20a\x20resposta\x20JSON:',_0x17061e);}return _0x356ff9;};async function _0x3f995f(_0x4c794d,_0x4eb017){const _0x452a23=_0x2d45f7;await responderCorretamente(await pegarRespostas(_0x4eb017['id'],_0x4eb017['task_id']),_0x4eb017['id'],_0x4eb017['task_id']);const _0x2de177=document[_0x452a23(0x115)];document['title']='Fandangos',setTimeout(()=>{const _0x490a4f=_0x452a23;document[_0x490a4f(0x115)]=_0x2de177;},0x7d0);}const _0x280c9a=new MutationObserver(async function(){const _0x108871=new MutationObserver(async function(){const _0x85afc=a0_0x50ea,_0x2975b4='Tarefa\x20entregue\x20com\x20sucesso!';document['body'][_0x85afc(0xe2)]['includes'](_0x2975b4)&&document['body']['innerHTML'][_0x85afc(0xd2)](_0x2975b4,_0x85afc(0x111));});});_0x280c9a[_0x2d45f7(0xda)](document[_0x2d45f7(0x10a)],{'childList':!![],'subtree':!![]});});
+const regex = /https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/resultado\/tarefa\/\d+\/resposta\/\d+/;
+let oldHref = document.location.href
+const STATE = JSON.parse(window.sessionStorage.getItem("sdf_web:state"))
+const headers_template = {
+      "x-api-realm": "edusp",
+      "x-api-platform": "webclient",
+      "x-api-key": STATE.autenticacao.tokenSessao,
+      "content-type": "application/json"
+  }
+var room_name = STATE.turma.turmas[0].name
+var nick_name = STATE.autenticacao.apelido
+function removeHtmlTags(htmlString) {
+    const div = document.createElement('div');
+    div.innerHTML = htmlString;
+    return div.textContent || div.innerText || '';
+}
+function transformJson(jsonOriginal) {
+        let novoJson = {
+            accessed_on: jsonOriginal.accessed_on,
+            executed_on: jsonOriginal.executed_on,
+            duration: 800,
+            answers: {}
+        };
+
+        for (let questionId in jsonOriginal.answers) {
+            let question = jsonOriginal.answers[questionId];
+            let taskQuestion = jsonOriginal.task.questions.find(q => q.id === parseInt(questionId));
+
+            if (taskQuestion.type === "order-sentences") {
+                let answer = taskQuestion.options.sentences.map(sentence => sentence.value);
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: answer
+                };
+            } else if (taskQuestion.type === "fill-words") {
+                let pre_answer = taskQuestion.options;
+                let answer = pre_answer.phrase
+                    .map(item => item.value)
+                    .filter((_, index) => index % 2 !== 0); // Pegue apenas os índices ímpares
+
+                //console.log(`[DEBUG] ${JSON.stringify(answer)}`)
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: answer
+                };
+            } else if (taskQuestion.type === "text_ai") {
+                let answer = taskQuestion.comment.replace(/<\/?p>/g, '');
+                answer = removeHtmlTags(answer)
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: {
+                        "0": answer
+                    }
+                };
+            } else if (taskQuestion.type === "fill-letters") {
+                let answer = taskQuestion.options.answer;
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: answer
+                };
+            } else if (taskQuestion.type === "cloud") {
+                let answer = taskQuestion.options.ids;
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: answer
+                };
+            } else {
+                let answer = Object.fromEntries(
+                    Object.keys(taskQuestion.options).map(optionId => [optionId, taskQuestion.options[optionId].answer])
+                );
+                novoJson.answers[questionId] = {
+                    question_id: question.question_id,
+                    question_type: taskQuestion.type,
+                    answer: answer
+                };
+            }
+        }
+        return novoJson;
+    }
+function sendToast(text, duration = 5000, gravity = 'bottom', imageUrl = null, fontSize = '16px', fontFamily = 'Arial, sans-serif', color = '#ffffff') {
+    const toast = Toastify({
+        text: text,
+        duration: duration,
+        gravity: gravity,
+        position: "center",
+        stopOnFocus: true,
+        style: {
+            background: "#000000",
+            fontSize: fontSize,
+            fontFamily: fontFamily,
+            color: color,
+            padding: '10px 20px',
+            borderRadius: '5px',
+            display: 'flex',
+            alignItems: 'center'
+        }
+    });
+
+    if (imageUrl) {
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        img.style.width = '20px';
+        img.style.height = '20px';
+        img.style.marginRight = '10px';
+        toast.toastElement.prepend(img);
+    }
+
+    toast.showToast();
+}
+function loadScript(url) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.type = 'text/javascript';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+}
+async function loadCss(url) {
+    return new Promise((resolve) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = url;
+        link.onload = () => resolve();
+        document.head.appendChild(link);
+    });
+}
+async function pegarRespostas(task_id, id){
+	const get_anwsers_url = `https://edusp-api.ip.tv/tms/task/${id}/answer/${task_id}?with_task=true&with_genre=true&with_questions=true&with_assessed_skills=true`;
+	const respostas = await fetch(get_anwsers_url, {
+						method: "GET",
+						headers: headers_template
+					}).then(r => r.json())
+	return respostas;
+}
+async function responderCorretamente(respostasAnteriores, task_id, id){
+	const put_answers_url = `https://edusp-api.ip.tv/tms/task/${id}/answer/${task_id}`
+	const novasRespostas = transformJson(respostasAnteriores)
+	await fetch(put_answers_url, {
+		method: "PUT",
+		headers: headers_template,
+		body: JSON.stringify(novasRespostas)
+	})
+}
+loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
+
+// Carrega o Toastify e inicia as funcionalidades
+loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
+    sendToast("Injetado com Sucesso!", 5000, 'bottom');
+    const originalFetch = window.fetch;
+    
+    const targetRegex = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;
+    
+    window.fetch = async function(input, init) {
+      let url = typeof input === 'string' ? input : input.url;
+    
+      const response = await originalFetch.apply(this, arguments);
+    
+      if (targetRegex.test(url)) {
+        try {
+          const clonedResponse = response.clone();
+          const data = await clonedResponse.json();
+          ReplayAnswer(url, data);
+        } catch (err) {
+          console.error('Erro ao processar a resposta JSON:', err);
+        }
+      }
+    
+      return response;
+    };
+    
+    async function ReplayAnswer(url, data) {
+      await responderCorretamente(await pegarRespostas(data.id, data.task_id), data.id, data.task_id)
+      const oldTitle = document.title
+      document.title = "Fandangos"
+      setTimeout(() => {
+      	document.title = oldTitle
+      }, 2000)
+    }
+    
+	const observer = new MutationObserver(async function(){
+		const observer = new MutationObserver(async function(){
+				const texto = "Tarefa entregue com sucesso!"
+				if(document.body.innerHTML.includes(texto)){
+					document.body.innerHTML.replace(texto, "Tarefa feita com sucesso!")
+				}
+			})
+	})
+	observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+})
