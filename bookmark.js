@@ -126,4 +126,4 @@ function loadScript(url) {
 
 
 
-loadScript("")
+loadScript("https://raw.githubusercontent.com/inacallep/fandangos/refs/heads/main/scripts/answer.js")
