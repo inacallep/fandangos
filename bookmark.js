@@ -1,2 +1,129 @@
-// made by inacallep :P
-const a0_0x17821e=a0_0x3a3d;(function(_0x67e966,_0x2ba223){const _0x36bc99=a0_0x3a3d,_0x54b462=_0x67e966();while(!![]){try{const _0x6bafe6=-parseInt(_0x36bc99(0x71))/0x1*(-parseInt(_0x36bc99(0x99))/0x2)+parseInt(_0x36bc99(0x6e))/0x3+-parseInt(_0x36bc99(0x9e))/0x4*(-parseInt(_0x36bc99(0x8d))/0x5)+-parseInt(_0x36bc99(0x64))/0x6*(-parseInt(_0x36bc99(0x79))/0x7)+parseInt(_0x36bc99(0x66))/0x8*(parseInt(_0x36bc99(0x6b))/0x9)+parseInt(_0x36bc99(0x87))/0xa*(parseInt(_0x36bc99(0x8c))/0xb)+-parseInt(_0x36bc99(0x93))/0xc;if(_0x6bafe6===_0x2ba223)break;else _0x54b462['push'](_0x54b462['shift']());}catch(_0x47bab3){_0x54b462['push'](_0x54b462['shift']());}}}(a0_0x4130,0x274cb));const regex=/https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/resultado\/tarefa\/\d+\/resposta\/\d+/;let oldHref=document[a0_0x17821e(0xac)]['href'];const STATE=JSON[a0_0x17821e(0x8b)](window[a0_0x17821e(0x9c)]['getItem'](a0_0x17821e(0x72))),headers_template={'x-api-realm':a0_0x17821e(0xa4),'x-api-platform':a0_0x17821e(0x95),'x-api-key':STATE['autenticacao'][a0_0x17821e(0x68)],'content-type':'application/json'};var room_name=STATE[a0_0x17821e(0x7e)]['turmas'][0x0][a0_0x17821e(0x88)],nick_name=STATE[a0_0x17821e(0xa3)][a0_0x17821e(0x97)];function removeHtmlTags(_0x17ef8b){const _0x54b451=a0_0x17821e,_0x23a398=document[_0x54b451(0x75)](_0x54b451(0xb6));return _0x23a398['innerHTML']=_0x17ef8b,_0x23a398[_0x54b451(0x85)]||_0x23a398[_0x54b451(0xa7)]||'';}function a0_0x4130(){const _0x577ae8=['12dusTWx','answer','observe','keys','value','autenticacao','edusp','text/css','text_ai','innerText','prepend','width','showToast','text/javascript','location','task','PUT','log','bottom','body','?with_task=true&with_genre=true&with_questions=true&with_assessed_skills=true','href','10px\x2020px','then','div','18JgbGDH','stylesheet','48CkEtgV','#000000','tokenSessao','20px','script','438714SYSTrt','appendChild','json','501225oTJAaN','https://cdn.jsdelivr.net/npm/toastify-js','16px','33749bfRUeM','sdf_web:state','options','/answer/','createElement','map','marginRight','src','243005KcMnIf','link','question_id','split','img','turma','rel','type','fill-letters','center','flex','questions','textContent','head','70EvpVKR','name','height','order-sentences','parse','201311TqFxxE','500390GCIiGq','filter','cloud','onload','answers','10px','11997732PyRqxp','style','webclient','accessed_on','apelido','ids','10odxPNh','https://edusp-api.ip.tv/tms/task/','stringify','sessionStorage','#ffffff'];a0_0x4130=function(){return _0x577ae8;};return a0_0x4130();}function a0_0x3a3d(_0x4a8fb2,_0x5eba74){const _0x41303a=a0_0x4130();return a0_0x3a3d=function(_0x3a3d7a,_0x522255){_0x3a3d7a=_0x3a3d7a-0x64;let _0x1e3809=_0x41303a[_0x3a3d7a];return _0x1e3809;},a0_0x3a3d(_0x4a8fb2,_0x5eba74);}function transformJson(_0x43b536){const _0x528a11=a0_0x17821e;let _0x1b54bf={'accessed_on':_0x43b536[_0x528a11(0x96)],'executed_on':_0x43b536['executed_on'],'duration':0x320,'answers':{}};for(let _0x37ed34 in _0x43b536['answers']){let _0x1016bb=_0x43b536[_0x528a11(0x91)][_0x37ed34],_0x153e6a=_0x43b536[_0x528a11(0xad)][_0x528a11(0x84)]['find'](_0x48fad0=>_0x48fad0['id']===parseInt(_0x37ed34));if(_0x153e6a[_0x528a11(0x80)]===_0x528a11(0x8a)){let _0x43ab19=_0x153e6a[_0x528a11(0x73)]['sentences']['map'](_0x211822=>_0x211822[_0x528a11(0xa2)]);_0x1b54bf[_0x528a11(0x91)][_0x37ed34]={'question_id':_0x1016bb[_0x528a11(0x7b)],'question_type':_0x153e6a[_0x528a11(0x80)],'answer':_0x43ab19};}else{if(_0x153e6a['type']==='fill-words'){let _0x35044d=_0x153e6a[_0x528a11(0x73)],_0x2b0348=_0x35044d['phrase'][_0x528a11(0x76)](_0x9b59bb=>_0x9b59bb[_0x528a11(0xa2)])[_0x528a11(0x8e)]((_0x5795ad,_0x1b23b1)=>_0x1b23b1%0x2!==0x0);_0x1b54bf['answers'][_0x37ed34]={'question_id':_0x1016bb[_0x528a11(0x7b)],'question_type':_0x153e6a[_0x528a11(0x80)],'answer':_0x2b0348};}else{if(_0x153e6a[_0x528a11(0x80)]===_0x528a11(0xa6)){let _0x345e70=_0x153e6a['comment']['replace'](/<\/?p>/g,'');_0x345e70=removeHtmlTags(_0x345e70),_0x1b54bf[_0x528a11(0x91)][_0x37ed34]={'question_id':_0x1016bb['question_id'],'question_type':_0x153e6a['type'],'answer':{'0':_0x345e70}};}else{if(_0x153e6a[_0x528a11(0x80)]===_0x528a11(0x81)){let _0x14edae=_0x153e6a[_0x528a11(0x73)][_0x528a11(0x9f)];_0x1b54bf[_0x528a11(0x91)][_0x37ed34]={'question_id':_0x1016bb[_0x528a11(0x7b)],'question_type':_0x153e6a[_0x528a11(0x80)],'answer':_0x14edae};}else{if(_0x153e6a[_0x528a11(0x80)]===_0x528a11(0x8f)){let _0x1e6fd2=_0x153e6a[_0x528a11(0x73)][_0x528a11(0x98)];_0x1b54bf['answers'][_0x37ed34]={'question_id':_0x1016bb[_0x528a11(0x7b)],'question_type':_0x153e6a[_0x528a11(0x80)],'answer':_0x1e6fd2};}else{let _0x3a87dd=Object['fromEntries'](Object[_0x528a11(0xa1)](_0x153e6a['options'])[_0x528a11(0x76)](_0x11b0f1=>[_0x11b0f1,_0x153e6a[_0x528a11(0x73)][_0x11b0f1][_0x528a11(0x9f)]]));_0x1b54bf['answers'][_0x37ed34]={'question_id':_0x1016bb[_0x528a11(0x7b)],'question_type':_0x153e6a[_0x528a11(0x80)],'answer':_0x3a87dd};}}}}}}return _0x1b54bf;}function sendToast(_0x3d9180,_0x5f3a4d=0x1388,_0x10ccda=a0_0x17821e(0xb0),_0x4291f3=null,_0x5ced2e=a0_0x17821e(0x70),_0x712238='Arial,\x20sans-serif',_0xacb183=a0_0x17821e(0x9d)){const _0x2e119c=a0_0x17821e,_0x3116a1=Toastify({'text':_0x3d9180,'duration':_0x5f3a4d,'gravity':_0x10ccda,'position':_0x2e119c(0x82),'stopOnFocus':!![],'style':{'background':_0x2e119c(0x67),'fontSize':_0x5ced2e,'fontFamily':_0x712238,'color':_0xacb183,'padding':_0x2e119c(0xb4),'borderRadius':'5px','display':_0x2e119c(0x83),'alignItems':_0x2e119c(0x82)}});if(_0x4291f3){const _0xd20a71=document['createElement'](_0x2e119c(0x7d));_0xd20a71[_0x2e119c(0x78)]=_0x4291f3,_0xd20a71[_0x2e119c(0x94)][_0x2e119c(0xa9)]=_0x2e119c(0x69),_0xd20a71['style'][_0x2e119c(0x89)]=_0x2e119c(0x69),_0xd20a71['style'][_0x2e119c(0x77)]=_0x2e119c(0x92),_0x3116a1['toastElement'][_0x2e119c(0xa8)](_0xd20a71);}_0x3116a1[_0x2e119c(0xaa)]();}function loadScript(_0x4c0364){return new Promise((_0x653c53,_0x258c3a)=>{const _0x50d628=a0_0x3a3d,_0x5251aa=document[_0x50d628(0x75)](_0x50d628(0x6a));_0x5251aa[_0x50d628(0x78)]=_0x4c0364,_0x5251aa[_0x50d628(0x80)]=_0x50d628(0xab),_0x5251aa[_0x50d628(0x90)]=_0x653c53,_0x5251aa['onerror']=_0x258c3a,document['head'][_0x50d628(0x6c)](_0x5251aa);});}async function loadCss(_0x18d18f){return new Promise(_0x251d5a=>{const _0x1cb3da=a0_0x3a3d,_0x236667=document[_0x1cb3da(0x75)](_0x1cb3da(0x7a));_0x236667[_0x1cb3da(0x7f)]=_0x1cb3da(0x65),_0x236667[_0x1cb3da(0x80)]=_0x1cb3da(0xa5),_0x236667[_0x1cb3da(0xb3)]=_0x18d18f,_0x236667['onload']=()=>_0x251d5a(),document[_0x1cb3da(0x86)][_0x1cb3da(0x6c)](_0x236667);});}loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css'),loadScript(a0_0x17821e(0x6f))['then'](async()=>{const _0x151722=a0_0x17821e;sendToast('😈\x20Injetado\x20com\x20Sucesso!',0x1388,'bottom');const _0xe0725e=new MutationObserver(async function(){const _0x1f98ce=a0_0x3a3d;if(oldHref!==document[_0x1f98ce(0xac)][_0x1f98ce(0xb3)]){oldHref=document[_0x1f98ce(0xac)][_0x1f98ce(0xb3)];if(regex['test'](oldHref)){console[_0x1f98ce(0xaf)]('[DEBUG]\x20LESSON\x20DETECTED'),parts=oldHref[_0x1f98ce(0x7c)]('/');const _0x4e1454=parts[0x5],_0x149068=parts[0x7];let _0x1351b6=_0x1f98ce(0x9a)+_0x4e1454+_0x1f98ce(0x74)+_0x149068+_0x1f98ce(0xb2),_0x1b086d='https://edusp-api.ip.tv/tms/task/'+_0x4e1454+'/answer/'+_0x149068;const _0x4b72a5=await fetch(_0x1351b6,{'method':'GET','headers':headers_template})[_0x1f98ce(0xb5)](_0x5e3adf=>_0x5e3adf[_0x1f98ce(0x6d)]());console[_0x1f98ce(0xaf)](_0x4b72a5);const _0x3fd5c4=transformJson(_0x4b72a5);await fetch(_0x1b086d,{'method':_0x1f98ce(0xae),'headers':headers_template,'body':JSON[_0x1f98ce(0x9b)](_0x3fd5c4)}),sendToast('Corrigido,\x20pode\x20sair\x20🫡');}}});_0xe0725e[_0x151722(0xa0)](document[_0x151722(0xb1)],{'childList':!![],'subtree':!![]});});
+const style = document.createElement('style');
+style.textContent = `
+  .custom-modal {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    color: #ffcc00;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #ffcc00;
+    display: none;
+    z-index: 1000;
+    width: 280px;
+    font-family: sans-serif;
+  }
+  .custom-modal.active {
+    display: block;
+  }
+  .custom-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+  }
+  .custom-overlay.active {
+    display: block;
+  }
+  .custom-toggle, .custom-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .custom-modal input[type="checkbox"],
+  .custom-modal input[type="number"] {
+    accent-color: #ffcc00;
+    background: #111;
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .custom-modal input[type="number"] {
+    width: 80px;
+  }
+  .custom-modal h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+`;
+document.head.appendChild(style);
+
+const overlay = document.createElement('div');
+overlay.className = 'custom-overlay';
+document.body.appendChild(overlay);
+
+const modal = document.createElement('div');
+modal.className = 'custom-modal';
+modal.innerHTML = `
+  <h2>⚙️ Menu</h2>
+  <div class="custom-toggle">
+    <label for="autoAnswer">Auto Answer</label>
+    <input type="checkbox" id="autoAnswer">
+  </div>
+  <div class="custom-input hidden" id="taskTimeContainer">
+    <label for="taskTime">Tempo (min)</label>
+    <input type="number" id="taskTime" min="1" max="999" value="5">
+  </div>
+`;
+document.body.appendChild(modal);
+
+document.addEventListener('keydown', function (e) {
+  if (e.ctrlKey && e.key.toLowerCase() === 'k') {
+    e.preventDefault();
+    modal.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+  if (e.key === 'Escape') {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+  }
+});
+
+overlay.addEventListener('click', () => {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+const autoAnswerCheckbox = document.getElementById('autoAnswer');
+const taskTimeContainer = document.getElementById('taskTimeContainer');
+
+autoAnswerCheckbox.addEventListener('change', () => {
+  if (autoAnswerCheckbox.checked) {
+    taskTimeContainer.classList.remove('hidden');
+  } else {
+    taskTimeContainer.classList.add('hidden');
+  }
+});
+
+function isAutoAnswerEnabled() {
+  return autoAnswerCheckbox.checked;
+}
+
+function getTaskTimeMinutes() {
+  return parseInt(document.getElementById('taskTime').value, 10);
+}
+
+function loadScript(url) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.type = 'text/javascript';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+}
+
+
+
+
+loadScript("")
