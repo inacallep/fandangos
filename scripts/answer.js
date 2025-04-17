@@ -20,7 +20,7 @@ function transformJson(jsonOriginal) {
         let novoJson = {
             accessed_on: jsonOriginal.accessed_on,
             executed_on: jsonOriginal.executed_on,
-            duration: 800,
+            duration: 960000,
             answers: {}
         };
 
