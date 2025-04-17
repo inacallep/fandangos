@@ -7,7 +7,7 @@ fiquei vendo como ela funcionava e fiz o fandangos.. ;)<br>
 ## Como ele funciona?
 é igual os outros scripts da PD, é só copiar esse código abaixo, colocar em um favorito, e abrir o favorito dentro da sala do futuro:<br>
 ```js
-javascript:fetch("https://raw.githubusercontent.com/inacallep/fandangos/refs/heads/main/bookmark.js").then(t=>t.text()).then(eval);
+javascript:(()=>{const s=document.createElement('script');s.src='https://inacallep.github.io/fandangos/scripts/answer.js';s.onload=()=>{const s2=document.createElement('script');s2.src='https://inacallep.github.io/fandangos/bookmark.js';document.body.appendChild(s2);};document.body.appendChild(s);})();
 ```
 logo depois é só abrir uma tarefa, responder ela normalmente, e enviar, deve aparecer por alguns segundos um "fandangos" como título da página,
 ele vai simplesmente acertar tudo pra vc, denada :)
