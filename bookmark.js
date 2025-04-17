@@ -16,7 +16,7 @@ Object.defineProperty(window, 'dadosLogin', {
 
 const originalFetch = window.fetch;
 
-window.fetch = function(url, options) {
+window.fetch = async function(url, options) {
   if (url === 'https://edusp-api.ip.tv/registration/edusp/token') {
     return originalFetch(url, options)
       .then(response => {
