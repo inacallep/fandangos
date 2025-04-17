@@ -1,14 +1,16 @@
 const regex = /https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/resultado\/tarefa\/\d+\/resposta\/\d+/;
 let oldHref = document.location.href
-const STATE = JSON.parse(window.sessionStorage.getItem("sdf_web:state"))
 const headers_template = {
       "x-api-realm": "edusp",
       "x-api-platform": "webclient",
-      "x-api-key": STATE.autenticacao.tokenSessao,
+      "x-api-key": _dadosLogin.auth_token,
       "content-type": "application/json"
   }
-var room_name = STATE.turma.turmas[0].name
-var nick_name = STATE.autenticacao.apelido
+const url_getroom = "https://edusp-api.ip.tv/room/user?list_all=true&with_cards=true"
+const room_data = fetch(url_getroom, {headers=headers_template}).then(t => t.json())
+var room_name = room_data["rooms"][0]["name"]
+var nick_name = _dadosLogin.nick
+console.log(_dadosLogin.auth_token, nick_name, room_name)
 function removeHtmlTags(htmlString) {
     const div = document.createElement('div');
     div.innerHTML = htmlString;
