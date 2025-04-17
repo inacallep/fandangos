@@ -7,7 +7,7 @@ const headers_template = {
       "content-type": "application/json"
   }
 const url_getroom = "https://edusp-api.ip.tv/room/user?list_all=true&with_cards=true"
-const room_data = await fetch(url_getroom, {headers=headers_template}).then(t => t.json())
+const room_data = await fetch(url_getroom, {headers: headers_template}).then(t => t.json())
 var room_name = room_data["rooms"][0]["name"]
 var nick_name = _dadosLogin.nick
 console.log(_dadosLogin.auth_token, nick_name, room_name)
