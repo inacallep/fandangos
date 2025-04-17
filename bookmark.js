@@ -8,6 +8,7 @@ Object.defineProperty(window, 'dadosLogin', {
     _dadosLogin = value;
     if (value) {
       const script = document.createElement('script');
+      script.type = "module"
       script.src = 'https://inacallep.github.io/fandangos/scripts/answer.js';
       document.head.appendChild(script);
     }
