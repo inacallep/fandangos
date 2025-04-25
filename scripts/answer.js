@@ -259,17 +259,19 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
       }, 2000)
     }
     let oldHref = document.location.href
+    const texto = "Tarefa entregue com sucesso"
 	const observer = new MutationObserver(async function(){
-		const observer = new MutationObserver(async function(){
-				if(oldHref != document.location.href){
-					oldHref = document.location.href
-					if(autoAnswerRegex.test(oldHref) == true){
-						if(getAutoResponderStatus() == true){
-							await autoResponder()
-						}
-					}
+		if(oldHref != document.location.href){
+			oldHref = document.location.href
+			if(autoAnswerRegex.test(oldHref) == true){
+				if(getAutoResponderStatus() == true){
+					await autoResponder()
 				}
-			})
+			}
+		}
+		if(document.body.innerHTML.includes(texto)){
+			document.body.innerHTML.replace(texto, "Tarefa feita por fandangos")
+		}
 	})
 	observer.observe(document.body, {
         childList: true,
