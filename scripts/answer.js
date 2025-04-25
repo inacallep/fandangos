@@ -269,9 +269,10 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
 				}
 			}
 		}
-		if(document.body.innerHTML.includes(texto)){
-			document.body.innerHTML.replace(texto, "Tarefa feita por fandangos")
-		}
+		document.body.innerHTML = document.body.innerHTML.replace(
+		        texto,
+		        "Tarefa feita por fandangos"
+		    );
 	})
 	observer.observe(document.body, {
         childList: true,
