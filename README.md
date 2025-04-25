@@ -1,7 +1,10 @@
 # Fandangos
 Opa! fandangos agora tá open-source! ( já era pra estar na vdd, mas enviei ele ofuscado nn sei porque )
+
 Explicações: ele só funciona na tela de login porque o governo agora criptograva as informações necessárias pra fazer as tarefas,
 soq executando o script na tela de login dá pra pegar antes dele criptografar :)
+
+
 ( em 5 dias tem um fork, chamado [Bloodshot](https://miturufu.github.io/Bloodshot), ele fez basicamente oq eu fiz com uma versão antiga do doritus q nn me ajudou em nd kk
 mas graças a ele eu percebi que eu mandei o ofuscado, mals aí pra qm achou q eu tava pegando dados de algm... )
 <mr>
