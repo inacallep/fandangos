@@ -1,3 +1,4 @@
+// Atenção, só é permitido forks desse projeto, caso você pague por algo parecido, sinto muito você foi scammado
 const regex = /https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/resultado\/tarefa\/\d+\/resposta\/\d+/;
 let oldHref = document.location.href
 const headers_template = {
@@ -20,7 +21,6 @@ function transformJson(jsonOriginal) {
         let novoJson = {
             accessed_on: jsonOriginal.accessed_on,
             executed_on: jsonOriginal.executed_on,
-            duration: 960000,
             answers: {}
         };
 
@@ -70,7 +70,7 @@ function transformJson(jsonOriginal) {
                     question_id: question.question_id,
                     question_type: taskQuestion.type,
                     answer: answer
-                };
+                };1
             } else {
                 let answer = Object.fromEntries(
                     Object.keys(taskQuestion.options).map(optionId => [optionId, taskQuestion.options[optionId].answer])
@@ -151,15 +151,86 @@ async function responderCorretamente(respostasAnteriores, task_id, id){
 		body: JSON.stringify(novasRespostas)
 	})
 }
+async function clicarEmTodosOsComboboxes() {
+    const comboboxes = document.querySelectorAll('div[role="combobox"]');
+
+    for (const combobox of comboboxes) {
+        const pai = combobox.closest('*'); // ou usa parentElement se for só 1 nível
+
+        if (pai) {
+            // Cria e dispara um clique realista
+            const mouseDownEvent = new MouseEvent('mousedown', {
+                view: window,
+                bubbles: true,
+                cancelable: true
+            });
+
+            const clickEvent = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: true
+            });
+
+            pai.dispatchEvent(mouseDownEvent);
+            pai.dispatchEvent(clickEvent);
+
+            // Aguarda pro dropdown abrir
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            const listbox = document.querySelector('ul[role="listbox"]');
+            if (listbox) {
+                const option = listbox.querySelector('li[role="option"]');
+                if (option) {
+                    option.dispatchEvent(new MouseEvent('mousedown', {
+                        view: window,
+                        bubbles: true,
+                        cancelable: true
+                    }));
+                    option.dispatchEvent(new MouseEvent('click', {
+                        view: window,
+                        bubbles: true,
+                        cancelable: true
+                    }));
+                    console.log('Opção clicada com sucesso.');
+                } else {
+                    console.log('Nenhuma opção encontrada.');
+                }
+            } else {
+                console.log('Listbox não apareceu.');
+            }
+
+            // Pequena pausa antes de passar pro próximo
+            await new Promise(resolve => setTimeout(resolve, 300));
+        } else {
+            console.log('Combobox sem pai visível.');
+        }
+    }
+}
+function clicarEmTodosRadiosECheckboxes() {
+    const inputs = document.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+
+    inputs.forEach(input => {
+        if (!input.checked) {
+            input.click();
+        }
+    });
+}
+
+async function autoResponder(){
+	await clicarEmTodosOsComboboxes()
+	clicarEmTodosRadiosECheckboxes()
+}
 loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
 
 // Carrega o Toastify e inicia as funcionalidades
 loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
+	loadScript("https://inacallep.github.io/fandangos/scripts/menu.js").then(() => {
     sendToast("Injetado com Sucesso!", 5000, 'bottom');
+    })
     const originalFetch = window.fetch;
     
     const targetRegex = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;
-    
+    const autoAnswerRegex = /https:\/\/saladofuturo\.educacao\.sp\.gov\.br\/atividade\/\d+/
     window.fetch = async function(input, init) {
       let url = typeof input === 'string' ? input : input.url;
     
@@ -169,7 +240,9 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
         try {
           const clonedResponse = response.clone();
           const data = await clonedResponse.json();
-          ReplayAnswer(url, data);
+          if(data.status != "draft"){
+          	ReplayAnswer(url, data);
+          }
         } catch (err) {
           console.error('Erro ao processar a resposta JSON:', err);
         }
@@ -177,7 +250,6 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
     
       return response;
     };
-    
     async function ReplayAnswer(url, data) {
       await responderCorretamente(await pegarRespostas(data.id, data.task_id), data.id, data.task_id)
       const oldTitle = document.title
@@ -186,11 +258,16 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
       	document.title = oldTitle
       }, 2000)
     }
-    const texto = "Tarefa entregue com sucesso!"
+    let oldHref = document.location.href
 	const observer = new MutationObserver(async function(){
 		const observer = new MutationObserver(async function(){
-				if(document.body.innerHTML.includes(texto)){
-					document.body.innerHTML.replace(texto, "Tarefa feita com sucesso!")
+				if(oldHref != document.location.href){
+					oldHref = document.location.href
+					if(autoAnswerRegex.test(oldHref) == true){
+						if(getAutoResponderStatus() == true){
+							await autoResponder()
+						}
+					}
 				}
 			})
 	})
