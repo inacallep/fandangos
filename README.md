@@ -31,4 +31,5 @@ E use o bookmarklet! Responde a tarefa de qualquer jeito. O fandangos cuida das 
 > ⚠️ IMPORTANTE: O bookmarklet só vai funcionar se você usar ele **na tela de login**, como explicado no inicio
 
 > ⚠️ OUTRO AVISO: Quanto mais tempo você ficar na página, mais tempo vai contar. Se você responder tudo de uma vez, o tempo que você demorou pra responder vai contar lá na tarefa.
+
 > ⚠️  Nova atualização em breve! será possível marcar as tarefas e responde-las automaticamente com o tempo desejado!
