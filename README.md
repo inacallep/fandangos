@@ -5,7 +5,7 @@ Explicações: ele só funciona na tela de login porque o governo agora criptogr
 soq executando o script na tela de login dá pra pegar antes dele criptografar :)
 
 
-( em 5 dias tem um fork, chamado [Bloodshot](https://miturufu.github.io/Bloodshot), ele fez basicamente oq eu fiz com uma versão antiga do doritus q nn me ajudou em nd kk
+( em 5 dias tem um fork, chamado [Bloodshot](https://github.com/Miturufu/Bloodshot), ele fez basicamente oq eu fiz com uma versão antiga do doritus q nn me ajudou em nd kk
 mas graças a ele eu percebi que eu mandei o ofuscado, mals aí pra qm achou q eu tava pegando dados de algm... )
 <mr>
 
