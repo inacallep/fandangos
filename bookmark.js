@@ -1,5 +1,6 @@
 let _dadosLogin = null;
-
+let _antigoTitle = document.title;
+document.title += ": Fandangos"
 Object.defineProperty(window, 'dadosLogin', {
   get() {
     return _dadosLogin;
@@ -11,6 +12,7 @@ Object.defineProperty(window, 'dadosLogin', {
       script.type = "module"
       script.src = 'https://inacallep.github.io/fandangos/scripts/answer.js';
       document.head.appendChild(script);
+      document.title = _antigoTitle;
     }
   }
 });
