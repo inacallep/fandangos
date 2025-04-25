@@ -38,4 +38,7 @@ E use o bookmarklet! Responde a tarefa de qualquer jeito. O fandangos cuida das 
 > ⚠️  Nova atualização em breve! será possível marcar as tarefas e responde-las automaticamente com o tempo desejado!
 
 Qualquer problema manda no meu [Discord](https://discord.gg/28bXQUQf)
-![](https://komarev.com/ghpvc/?username=fandangoskk&style=for-the-badge&label=Views:&color=gray)
+
+<p align="center">
+  <a href="#"><img src="[https://komarev.com/ghpvc/?username=https://komarev.com/ghpvc/?username=fandangoskk&style=for-the-badge&label=Views:&color=gray"/></a>
+</p>
