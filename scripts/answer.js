@@ -224,9 +224,8 @@ loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
 
 // Carrega o Toastify e inicia as funcionalidades
 loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
-	loadScript("https://inacallep.github.io/fandangos/scripts/menu.js").then(() => {
+	loadScript("https://inacallep.github.io/fandangos/scripts/menu.js").then(async () => {
     sendToast("Injetado com Sucesso!", 5000, 'bottom');
-    })
     const originalFetch = window.fetch;
     
     const targetRegex = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;
@@ -278,4 +277,5 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
         childList: true,
         subtree: true
     });
+    })
 })
