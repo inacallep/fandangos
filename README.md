@@ -40,5 +40,5 @@ E use o bookmarklet! Responde a tarefa de qualquer jeito. O fandangos cuida das 
 Qualquer problema manda no meu [Discord](https://discord.gg/28bXQUQf)
 
 <p align="center">
-  <a href="#"><img src="https://komarev.com/ghpvc/?username=https://komarev.com/ghpvc/?username=fandangoskk&style=for-the-badge&label=Views:&color=gray"/></a>
+  <a href="#"><img src="https://komarev.com/ghpvc/?username=fandangoskk&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
