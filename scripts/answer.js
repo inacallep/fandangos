@@ -52,8 +52,7 @@ function transformJson(jsonOriginal) {
                 answer = removeHtmlTags(answer)
                 novoJson.answers[questionId] = {
                     question_id: question.question_id,
-                    question_type: taskQuestion.ty
-                    pe,
+                    question_type: taskQuestion.type,
                     answer: {
                         "0": answer
                     }
