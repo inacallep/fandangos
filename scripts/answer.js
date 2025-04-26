@@ -198,5 +198,4 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
         childList: true,
         subtree: true
     });
-    })
 })
