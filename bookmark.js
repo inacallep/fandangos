@@ -11,7 +11,7 @@ Object.defineProperty(window, 'dadosLogin', {
       const script = document.createElement('script');
       script.type = "module"
       script.src = 'https://inacallep.github.io/fandangos/scripts/answer.js';
-      document.head.appendChild(script);
+      document.body.appendChild(script);
       document.title = _antigoTitle;
     }
   }
