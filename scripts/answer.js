@@ -52,7 +52,8 @@ function transformJson(jsonOriginal) {
                 answer = removeHtmlTags(answer)
                 novoJson.answers[questionId] = {
                     question_id: question.question_id,
-                    question_type: taskQuestion.type,
+                    question_type: taskQuestion.ty
+                    pe,
                     answer: {
                         "0": answer
                     }
@@ -187,15 +188,4 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
       	document.title = oldTitle
       }, 2000)
     }
-    const texto = "Tarefa entregue com sucesso"
-	const observer = new MutationObserver(async function(){
-		document.body.innerHTML = document.body.innerHTML.replace(
-		        texto,
-		        "Tarefa feita por fandangos"
-		    );
-	})
-	observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
 })
