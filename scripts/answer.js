@@ -153,7 +153,7 @@ async function responderCorretamente(respostasAnteriores, task_id, id){
 	})
 }
 
-loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
+await loadCss('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
 
 // Carrega o Toastify e inicia as funcionalidades
 loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
