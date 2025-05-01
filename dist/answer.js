@@ -159,13 +159,14 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
     sendToast("Injetado com Sucesso!", 5000, 'bottom');
     const originalFetch = window.fetch;
     
-    const targetRegex = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;
+    const regexTarefa = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer$/;
+    const regexRascunho = /^https:\/\/edusp-api\.ip\.tv\/tms\/task\/\d+\/answer\/\d+$/;
     window.fetch = async function(input, init) {
       let url = typeof input === 'string' ? input : input.url;
     
       const response = await originalFetch.apply(this, arguments);
     
-      if (targetRegex.test(url)) {
+      if (regexTarefa.test(url) || regexRascunho.test(url)) {
         try {
           const clonedResponse = response.clone();
           const data = await clonedResponse.json();

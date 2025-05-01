@@ -10,7 +10,7 @@ Object.defineProperty(window, 'dadosLogin', {
     if (value) {
       const script = document.createElement('script');
       script.type = "module"
-      script.src = 'https://inacallep.github.io/fandangos/scripts/answer.js';
+      script.src = 'https://inacallep.github.io/fandangos/dist/answer.js';
       document.body.appendChild(script);
       document.title = _antigoTitle;
     }
