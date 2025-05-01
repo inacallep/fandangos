@@ -39,6 +39,9 @@ Qualquer problema manda no meu [Discord](https://discord.gg/28bXQUQf)
 <p align="center">
   <a href="#"><img src="https://komarev.com/ghpvc/?username=fandangos&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
+
 ### Obrigado a todos que estão usando, tmj
+
 Acompanhe também o [HCK](https://github.com/hackermoon1/sala-do-futuro-script), script muito bom.
+
 *Obs: use fandangos com responsabilidade, ele é um script totalmente free e aberto pra quem quiser fazer sua própria versão, não compre algum script que faça a mesma coisa que esse se esse é gratuito, obrigado*
