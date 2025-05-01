@@ -1,13 +1,10 @@
-# Fandangos
-Opa! fandangos agora tá open-source! ( já era pra estar na vdd, mas enviei ele ofuscado nn sei porque )
+# Fandangos 
+## Atualizações
+> Antes ele não auto corrigia tarefas em rascunho, mas já foi resolvido.
 
-Explicações: ele só funciona na tela de login porque o governo agora criptograva as informações necessárias pra fazer as tarefas,
-soq executando o script na tela de login dá pra pegar antes dele criptografar :)
+> Adicionada uma pasta dev, onde tá acontecendo o desenvolvimento de novas funcionalidades...
 
-
-( em 5 dias tem um fork, chamado [Bloodshot](https://github.com/Miturufu/Bloodshot) apareceu, ele fez basicamente oq eu fiz com uma versão antiga do doritus q nn me ajudou em nd kk
-mas graças a ele eu percebi que eu mandei o ofuscado, mals aí pra qm achou q eu tava pegando dados de algm... )
-<mr>
+> Auto-responder tá sendo bolado ainda, além de algo pra adicionar mais tempo nas tarefas.
 
 Pra usar, segue os passos abaixo
 # Funciona tanto em PC como no Celular
@@ -30,7 +27,7 @@ Depois...
 
 Vá para: [https://saladofuturo.educacao.sp.gov.br](https://saladofuturo.educacao.sp.gov.br)
 
-E use o bookmarklet! Responde a tarefa de qualquer jeito. O fandangos cuida das respostas corretas pra você.
+E use o bookmarklet na TELA DE LOGIN! Responde a tarefa de qualquer jeito. O fandangos cuida das respostas corretas pra você.
 > ⚠️ IMPORTANTE: O bookmarklet só vai funcionar se você usar ele **na tela de login**, como explicado no inicio
 
 > ⚠️ OUTRO AVISO: Quanto mais tempo você ficar na página, mais tempo vai contar. Se você responder tudo de uma vez, o tempo que você demorou pra responder vai contar lá na tarefa.
@@ -42,3 +39,6 @@ Qualquer problema manda no meu [Discord](https://discord.gg/28bXQUQf)
 <p align="center">
   <a href="#"><img src="https://komarev.com/ghpvc/?username=fandangos&style=for-the-badge&label=Views:&color=gray"/></a>
 </p>
+### Obrigado a todos que estão usando, tmj
+Acompanhe também o [HCK](https://github.com/hackermoon1/sala-do-futuro-script), script muito bom.
+*Obs: use fandangos com responsabilidade, ele é um script totalmente free e aberto pra quem quiser fazer sua própria versão, não compre algum script que faça a mesma coisa que esse se esse é gratuito, obrigado*
