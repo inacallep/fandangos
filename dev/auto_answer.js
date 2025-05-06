@@ -219,9 +219,7 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
 
                     const postResponse = await fetch(postUrl, {
                         method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
+                        headers: headers_template,
                         body: JSON.stringify(answersData),
                     });
 
