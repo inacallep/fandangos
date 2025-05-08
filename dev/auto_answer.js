@@ -213,13 +213,20 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
                 console.log("answersData:", answersData);
 
                 const taskId = url.match(/\/task\/(\d+)\//)[1];
-
-                setTimeout(async () => {
+				const postData = {
+					acessed_on: "room",
+					executed_on: details.target_value,
+					answers: answersData
+				}
+				console.log(postData)
+                /*setTimeout(async () => {
                     const postUrl = `https://edusp-api.ip.tv/tms/task/${taskId}/answer`;
 
                     const postResponse = await fetch(postUrl, {
                         method: 'POST',
-                        headers: headers_template,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
                         body: JSON.stringify(answersData),
                     });
 
@@ -228,7 +235,7 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js').then(async () => {
                     } else {
                         console.error("Erro ao enviar os dados:", postResponse.statusText);
                     }
-                }, 240000); // 4 minutos
+                }, 240000); // 4 minutos */
             }
         } catch (err) {
             console.error('Erro ao processar a resposta JSON:', err);
